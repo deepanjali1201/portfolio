@@ -1,0 +1,222 @@
+
+/* =====================================
+   SKILLS CARDS ALIGNMENT
+===================================== */
+
+@media (min-width: 1024px) {
+  #skills .grid > div:nth-child(4) {
+    grid-column: 2 / span 2;
+  }
+
+  #skills .grid > div:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+
+
+/* =====================================
+   GLOBAL LAYOUT
+===================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* =====================================
+   CONSISTENT SECTION SPACING
+===================================== */
+
+#home,
+#about,
+#skills,
+#experience,
+#projects,
+#contact {
+  width: 100%;
+  padding-left: clamp(32px, 7vw, 100px) !important;
+  padding-right: clamp(32px, 7vw, 100px) !important;
+  scroll-margin-top: 80px;
+}
+
+
+/* =====================================
+   CENTER CONTENT
+===================================== */
+
+#home > div,
+#about > div,
+#skills > div,
+#projects > div,
+#contact > div {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#experience > div {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =====================================
+   SECTION BREATHING ROOM
+===================================== */
+
+#about,
+#skills,
+#experience,
+#projects,
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+/* =====================================
+   SKILLS SECTION SPACING
+===================================== */
+
+#skills {
+  padding-top: 75px !important;
+  padding-bottom: 75px !important;
+}
+
+/* Skills heading */
+
+#skills h2 {
+  margin-bottom: 12px !important;
+}
+
+/* Skills paragraph */
+
+#skills p {
+  text-align: center !important;
+  margin: 0 auto 20px !important;
+  line-height: 1.5;
+  max-width: 650px;
+}
+
+/* Skills cards grid */
+
+#skills .grid {
+  margin-top: 0 !important;
+  row-gap: 20px !important;
+  column-gap: 20px !important;
+}
+
+/* Do not change card padding or height */
+
+#skills .grid > div {
+  min-height: unset;
+}
+
+
+/* =====================================
+   PROJECTS SECTION
+===================================== */
+
+#projects {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  scroll-margin-top: 80px;
+}
+
+#projects > div {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =====================================
+   CONTACT SECTION
+===================================== */
+
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  scroll-margin-top: 80px;
+}
+
+#contact > div {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* =====================================
+   MOBILE RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 640px) {
+
+  #home,
+  #about,
+  #skills,
+  #experience,
+  #projects,
+  #contact {
+    padding-left: 22px !important;
+    padding-right: 22px !important;
+  }
+
+  #about,
+  #skills,
+  #experience,
+  #projects,
+  #contact {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  #projects > div,
+  #contact > div {
+    width: 100%;
+  }
+}
+
+/* Footer Alignment Fix */
+
+footer {
+  width: 100%;
+}
+
+footer > div {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer > div > div:first-child {
+  width: 100%;
+}
+
+footer > div > div:last-child {
+  width: 100%;
+}
+/* Footer horizontal spacing */
+footer {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
